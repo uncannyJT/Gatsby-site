@@ -6,7 +6,7 @@ module.exports = {
     title: `Javier's Gatsby Site`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-netlify", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
