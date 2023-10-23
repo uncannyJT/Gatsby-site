@@ -2,17 +2,18 @@ import * as React from "react"
 import { Link } from 'gatsby'
 
 
-const Layout = () => {
+const Layout = ({pageTitle, pageHeading}) => {
     return (
         <main>
-            <title>Home Page</title>
+            <title>{pageTitle}</title>
             <nav>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
-            <h1>this is my contact page</h1>
+            <h1>{pageHeading}</h1>
         </main>
         
     )
