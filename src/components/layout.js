@@ -1,8 +1,9 @@
 import * as React from "react"
 import { Link } from 'gatsby'
+import { Children } from "react"
 
 
-const Layout = ({pageTitle, pageHeading}) => {
+const Layout = ({pageTitle, pageHeading, children}) => {
     return (
         <main>
             <title>{pageTitle}</title>
@@ -14,6 +15,7 @@ const Layout = ({pageTitle, pageHeading}) => {
                 </ul>
             </nav>
             <h1>{pageHeading}</h1>
+            {children}
         </main>
         
     )
