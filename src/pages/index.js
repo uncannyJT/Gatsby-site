@@ -11,7 +11,7 @@ const IndexPage = () => {
         alt="Campfire gathering"
         style={{position: "relative"}}
         src="../images/campfire.jpg"
-        className={styles.backgroundImage}
+        
       />
     </Layout>
   )
