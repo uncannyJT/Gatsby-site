@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Javier's Gatsby Site`,
+    title: `JT's Gatsby Dev Site`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-netlify", {
