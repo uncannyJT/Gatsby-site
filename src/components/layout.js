@@ -5,7 +5,8 @@ import {
     heading,
     navLinks,
     navLinkItem,
-    navLinkText
+    navLinkText,
+    siteTitle
 } from "./layout.module.css"
 
 console.log('container: ', container)
@@ -23,9 +24,9 @@ const Layout = ({pageTitle, pageHeading, children}) => {
     
     return (
         <main className={container}>
-           <title>
-                {pageTitle} | {data.site.siteMetadata.title}
-            </title>
+           <header className={siteTitle}>
+                {data.site.siteMetadata.title}
+            </header>
             <nav>
                 <ul className ={navLinks}>
                     <li className ={navLinkItem}><Link to="/"  className={navLinkText}>Home</Link></li>
