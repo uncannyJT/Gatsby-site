@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import {textColor} from "../components/layout.module.css"
 import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 
@@ -10,7 +11,7 @@ const Blog = ({ data }) => {
                 data.allMdx.nodes.map((node) => (
                     <article key={node.id}>
                         <h2>{node.frontmatter.title}</h2>
-                        <p>Postdate: {node.frontmatter.date}</p>
+                        <p className={textColor}>Postdate: {node.frontmatter.date}</p>
                         <hr/>
                         <p>{node.excerpt}</p>
                     </article>
