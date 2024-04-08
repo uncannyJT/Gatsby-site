@@ -1,8 +1,8 @@
 import * as React from 'react'
-import Layout from '../components/layout'
-import {textColor} from "../components/layout.module.css"
+import Layout from '../../components/layout'
+import {textColor} from "../../components/layout.module.css"
 import { graphql } from 'gatsby'
-import Seo from '../components/seo'
+import Seo from '../../components/seo'
 
 const Blog = ({ data }) => {
     return (
